@@ -114,7 +114,7 @@ export default {
         .then(res => {
           if (res.data.status == "succses") {
             this.$router.push({ name: "index" });
-            this.$store.commit('setUserNmae',this.userName)
+            this.$store.commit('setUserNmae',this.userName);
           } else {
             this.error = res.data.msg;
           }
